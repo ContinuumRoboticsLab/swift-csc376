@@ -24,7 +24,7 @@ Swift provides:
 
 ```shell script
 conda activate <your conda env name goes here> #make sure you are installing this swift in your conda environment
-git clone [https://github.com/ContinuumRoboticsLab/swift-csc376](https://github.com/ContinuumRoboticsLab/swift-csc376)
+git clone https://github.com/ContinuumRoboticsLab/swift-csc376
 cd swift-csc376
 pip3 install -e .
 ```
