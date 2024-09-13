@@ -1,4 +1,4 @@
-# Swift
+<!---# Swift
 
 [![A Python Robotics Package](https://raw.githubusercontent.com/petercorke/robotics-toolbox-python/master/.github/svg/py_collection.min.svg)](https://github.com/petercorke/robotics-toolbox-python)
 [![QUT Centre for Robotics Open Source](https://github.com/qcr/qcr.github.io/raw/master/misc/badge.svg)](https://qcr.github.io)
@@ -17,43 +17,18 @@ Swift provides:
   * robot visualisation and simulation;
   * recording and saving a video of the simulation;
   * source code which can be read for learning and teaching;
+-->
 
 ## Installing
 ### Using pip
 
-Swift is designed to be controlled through the [Robotics Toolbox for Python](https://github.com/petercorke/robotics-toolbox-python). By installing the toolbox through PyPI, swift is installed as a dependency
-
 ```shell script
-pip3 install roboticstoolbox-python
-```
-
-Otherwise, Swift can be install by
-
-```shell script
-pip3 install swift-sim
-```
-
-Available options are:
-
-- `nb` provides the ability for Swift to be embedded within a Jupyter Notebook
-- `vision` implements an RTC communication strategy allowing for visual feedback from Swift and allows Swift to be run on Google Colab
-
-Put the options in a comma-separated list like
-
-```shell script
-pip3 install swift-sim[optionlist]
-```
-
-### From GitHub
-
-To install the latest version from GitHub
-
-```shell script
-git clone https://github.com/jhavl/swift.git
-cd swift
+conda activate <your conda env name goes here> #make sure you are installing this swift in your conda environment
+git clone [https://github.com/ContinuumRoboticsLab/swift-csc376](https://github.com/ContinuumRoboticsLab/swift-csc376)
+cd swift-csc376
 pip3 install -e .
 ```
-
+<!--
 ## Code Examples
 
 ### Robot Plot
@@ -143,7 +118,9 @@ while not arrived:
     
     # Set the Panda's joint velocities
     panda.qd = np.linalg.pinv(panda.jacobe(panda.q)) @ v
+
     
     # Step the simulator by 50 milliseconds
     env.step(0.05)
 ```
+--> 
